@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>The Homework Machine</title>
 </head>
 
 <body>
@@ -19,30 +19,68 @@
         </div>
     </header>
     <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
+        <div id="initially-visible">
+            <h2> Fill in the following words!</h2>
+            <h3 class="prompt"> Noun</h3>
+            <input class="user-input" id="noun1" />
+            
+            <h3 class="prompt"> Noun</h3>
+            <input class="user-input" id="noun2" />
 
-            <content>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
+            <h3 class="prompt"> Noun</h3>
+            <input class="user-input" id="noun3" />
+
+            <h3 class="prompt"> Verb</h3>
+            <input class="user-input" id="verb1" />
+
+            <h3 class="prompt"> Number</h3>
+            <input class="user-input" id="number1" />
+
+            <h3 class="prompt"> Adjective</h3>
+            <input class="user-input" id="adjective1" />
+            
+            <h3 class="prompt"> Number</h3>
+            <input class="user-input" id="number2" />
+
+            <h3 class="prompt"> Adjective</h3>
+            <input class="user-input" id="adjective2" />
+
+            <h3 class="prompt"> Adjective</h3>
+            <input class="user-input" id="adjective3" />
+            
+            <br>
+            <button id="submit">Submit</button>
+        </div>
+        <div id="initially-invisible">
+                <p>The <span id="output-noun1"></span> Machine,
+                <br>
+                Oh, the <span id="output-noun1a"></span> Machine,
+                <br>
+                Most perfect <span id="output-noun2"></span> that’s ever been seen.
+                <br>
+                Just put in your <span id="output-noun1b"></span> then drop in a <span id="output-noun3"></span>,
+                <br>
+                <span id="output-verb"></span> on the switch, and in <span id="output-number1"></span>> seconds’ time,
+                <br>
+                Your <span id="output-noun1c"></span> comes out, <span id="output-adjective1"></span> and <span id="output-adjective2"></span> as can be.
+                <br>
+                Here it is—‘nine plus four?’ and the answer is ‘<span id="output-number2"></span>.’
+                <br>
+                <span id="output-number2a"></span>?
+                <br>
+                Oh me . . .
+                <br>
+                I guess it’s not as <span id="output-adjective3"></span>
+                <br>
+                As I thought it would be.
             </p>
 
-        </section>
+        </div>
+
+
+        <br>
+
+
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
