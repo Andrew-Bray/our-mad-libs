@@ -47,6 +47,7 @@ submitButton.addEventListener("click", () => {
   outputAdjective1.textContent = adjective1.value;
   outputAdjective3.textContent = adjective3.value;
 
+  // toggle class hidden and visible onsubmit
   inputForm.classList.replace("visible", "hidden");
   outputForm.classList.replace("hidden", "visible");
 });
