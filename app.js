@@ -7,24 +7,20 @@
 
 // THESE ARE INPUTS
 const noun1 = document.getElementById('noun1');
-
 const noun2 = document.getElementById('noun2');
-
 const noun3 = document.getElementById('noun3');
-
 const verb1 = document.getElementById('verb1');
-
 const number1 = document.getElementById('number1');
-
 const adjective1 = document.getElementById('adjective1');
-
 const number2 = document.getElementById('number2');
-
 const adjective2 = document.getElementById('adjective2');
-
 const adjective3 = document.getElementById('adjective3');
 
 const submitButton = document.getElementById('submit');
+// Affected by the button click
+const initVisible = document.getElementById('initially-visible');
+const initInvisible = document.getElementById('initially-invisible');
+const machinePicture = document.getElementById('machine-picture');
 
 
 // THESE ARE OUTPUTS/SPANS
@@ -55,6 +51,7 @@ const outputAdjective3 = document.getElementById('output-adjective3');
 
 
 submitButton.addEventListener('click', () => {
+    
     const value1 = noun1.value;
     outputNoun1.textContent = value1;
     
@@ -93,6 +90,18 @@ submitButton.addEventListener('click', () => {
 
     const value13 = adjective3.value;
     outputAdjective3.textContent = value13;
+   
+// .4 second post-click time-delay. (you know, for style)
+    setTimeout( function(){
+// Classlist togglers to the two divs
+        initInvisible.classList.toggle('hidden');
+        initVisible.classList.toggle('hidden');
+        initInvisible.classList.add('poem-format');
+        machinePicture.classList.toggle('hidden');
+        machinePicture.classList.toggle('fadein');
+        machinePicture.classList.toggle('move-ne');
+
+    }, 600);
 
 
 })
