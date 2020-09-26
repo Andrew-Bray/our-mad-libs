@@ -1,3 +1,10 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family:  'IM Fell DW Pica', serif;
+}
+
 
 body {
     --color1: #ffffff;
@@ -24,7 +31,6 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
 
@@ -34,6 +40,15 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+}
+
+.homework-machine::after {
+    background-image: url(https://i.pinimg.com/originals/6f/33/12/6f3312b….jpg);
+    background-repeat: no-repeat;
+    background-position-x: 155px;
+    background-position-y: 55px;
+    background-size: cover;
+    opacity: .6;
 }
 
 section {
@@ -85,7 +100,6 @@ header img {
 }
 
 
-
 content {
     width: 80%;
 }
@@ -93,7 +107,22 @@ content {
 p {
     margin: var(--gutter);
 }
-  
+
+.output-paragraph {
+    font-size: 2em;
+}
+
+.button {
+    display: flex; 
+    background-color: lightgrey;
+    border: none;
+    padding: 4px 44px;
+    margin-top: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 footer {
     position: fixed;
     width: 100%;
@@ -104,22 +133,30 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-  
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+
+@keyframes pulse {
+20% {
+    transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+}
+
+40% {
+    transform: rotate3d(10, 10, -10, 50deg) scale(1);
+}
+
+60% {
+    transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
     }
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
+80% {
+    transform: rotate3d(10, 10, 10, 50deg) scale(1);
+}
 
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+}
 
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
+.hidden {
+    display: none;
+}
 
-  }
+.visible {
+    display: block;
+}

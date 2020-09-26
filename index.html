@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>The Homework Machine</title>
 </head>
 
@@ -18,40 +17,37 @@
             <img src="assets/big-logo.png"/>
         </div>
     </header>
-    <main>
-        <div id="initially-visible">
+    <main class="homework-machine">
+        <div class="visible" id="input-form">
             <h2> Fill in the following words!</h2>
-            <h3 class="prompt" placeholder="Noun"> Noun</h3>
+            <h3 class="prompt" placeholder="Noun"> Noun: </h3>
             <input class="user-input" id="noun1" />
             
-            <h3 class="prompt"> Noun</h3>
+            <h3 class="prompt"> Noun: </h3>
             <input class="user-input" id="noun2" />
 
-            <h3 class="prompt"> Noun</h3>
+            <h3 class="prompt"> Noun: </h3>
             <input class="user-input" id="noun3" />
 
-            <h3 class="prompt"> Verb</h3>
+            <h3 class="prompt"> Verb: </h3>
             <input class="user-input" id="verb1" />
 
-            <h3 class="prompt"> Number</h3>
+            <h3 class="prompt"> Number: </h3>
             <input class="user-input" id="number1" />
 
-            <h3 class="prompt"> Adjective</h3>
+            <h3 class="prompt"> Adjective: </h3>
             <input class="user-input" id="adjective1" />
             
-            <h3 class="prompt"> Number</h3>
+            <h3 class="prompt"> Number: </h3>
             <input class="user-input" id="number2" />
 
-            <h3 class="prompt"> Adjective</h3>
-            <input class="user-input" id="adjective2" />
-
-            <h3 class="prompt"> Adjective</h3>
+            <h3 class="prompt"> Adjective: </h3>
             <input class="user-input" id="adjective3" />
             
             <br>
-            <button id="submit">Submit</button>
+            <button id="submit" class="button">Submit!</button>
         </div>
-        <div id="initially-invisible">
+        <div class="hidden output-paragraph" id="output-form">
                 <p>The <span id="output-noun1"></span> Machine,
                 <br>
                 Oh, the <span id="output-noun1a"></span> Machine,
@@ -60,7 +56,7 @@
                 <br>
                 Just put in your <span id="output-noun1b"></span> then drop in a <span id="output-noun3"></span>,
                 <br>
-                <span id="output-verb1"></span> on the switch, and in <span id="output-number1"></span>> seconds’ time,
+                <span id="output-verb1"></span> on the switch, and in <span id="output-number1"></span> seconds’ time,
                 <br>
                 Your <span id="output-noun1c"></span> comes out, <span id="output-adjective1"></span> and <span id="output-adjective2"></span> as can be.
                 <br>
@@ -86,7 +82,7 @@
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
