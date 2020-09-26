@@ -29,6 +29,8 @@ const outputAdjective3 = document.getElementById("output-adjective3");
 const inputForm = document.getElementById("input-form");
 const outputForm = document.getElementById("output-form");
 
+const machinePicture = document.getElementById("machine-picture");
+
 // issues: injecting the first number into the first noun;
 // though the second repeat noun accurately repeats in the third slot
 
@@ -50,4 +52,7 @@ submitButton.addEventListener("click", () => {
   // toggle class hidden and visible onsubmit
   inputForm.classList.replace("visible", "hidden");
   outputForm.classList.replace("hidden", "visible");
+  outputForm.classList.add("poem-format");
+
+  machinePicture.classList.add("fadein");
 });
