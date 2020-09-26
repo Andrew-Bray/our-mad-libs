@@ -1,3 +1,10 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    font-family:  'IM Fell DW Pica', serif;
+}
+
 
 body {
     --color1: #rgb(245 255 247);
@@ -38,6 +45,15 @@ main {
     line-height: 1.5;
 
 
+}
+
+.homework-machine::after {
+    background-image: url(https://i.pinimg.com/originals/6f/33/12/6f3312b….jpg);
+    background-repeat: no-repeat;
+    background-position-x: 155px;
+    background-position-y: 55px;
+    background-size: cover;
+    opacity: .6;
 }
 
 section {
@@ -120,7 +136,6 @@ header img {
 }
 
 
-
 content {
     width: 80%;
 }
@@ -128,7 +143,22 @@ content {
 p {
     margin: var(--gutter);
 }
-  
+
+.output-paragraph {
+    font-size: 2em;
+}
+
+.button {
+    display: flex; 
+    background-color: lightgrey;
+    border: none;
+    padding: 4px 44px;
+    margin-top: 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 footer {
     position: fixed;
     width: 100%;
@@ -139,22 +169,51 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
  /* 
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
+>>>>>>> d2f1bd3629070b56d5c72037ab0c13b8b703845d
+=======
+>>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
 
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+@keyframes pulse {
+20% {
+    transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+}
+
+40% {
+    transform: rotate3d(10, 10, -10, 50deg) scale(1);
+}
+
+60% {
+    transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
     }
 
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
+80% {
+    transform: rotate3d(10, 10, 10, 50deg) scale(1);
+}
 
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
+}
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+<<<<<<< HEAD
+=======
   }*/
+>>>>>>> d2f1bd3629070b56d5c72037ab0c13b8b703845d
+=======
+>>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
