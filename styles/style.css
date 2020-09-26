@@ -170,6 +170,7 @@ footer {
     box-shadow: var(--shadow);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  /* 
   @keyframes pulse {
@@ -177,6 +178,8 @@ footer {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 >>>>>>> d2f1bd3629070b56d5c72037ab0c13b8b703845d
+=======
+>>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
 
 @keyframes pulse {
 20% {
@@ -192,6 +195,9 @@ footer {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
 80% {
     transform: rotate3d(10, 10, 10, 50deg) scale(1);
 }
@@ -205,6 +211,9 @@ footer {
 .visible {
     display: block;
 }
+<<<<<<< HEAD
 =======
   }*/
 >>>>>>> d2f1bd3629070b56d5c72037ab0c13b8b703845d
+=======
+>>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
