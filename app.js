@@ -50,8 +50,4 @@ submitButton.addEventListener("click", () => {
   // toggle class hidden and visible onsubmit
   inputForm.classList.replace("visible", "hidden");
   outputForm.classList.replace("hidden", "visible");
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393

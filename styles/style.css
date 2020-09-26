@@ -43,18 +43,8 @@ main {
     align-items: center;
     text-align: center;
     line-height: 1.5;
-
-
 }
 
-.homework-machine::after {
-    background-image: url(https://i.pinimg.com/originals/6f/33/12/6f3312b….jpg);
-    background-repeat: no-repeat;
-    background-position-x: 155px;
-    background-position-y: 55px;
-    background-size: cover;
-    opacity: .6;
-}
 
 section {
     background-color: var(--color5);
@@ -69,6 +59,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+
 }
 
 header {
@@ -91,8 +82,13 @@ h2 {
     font-size: 1.8rem;
     font-weight: bold;
 }
-/*This class sets the unique CSS for the revealed poem*/
 
+input {
+    font-size: 1.5em;
+}
+
+/*This class sets the unique CSS for the revealed poem*/
+/* 
 .poem-format {
     display: flex;
     flex-direction: column;
@@ -100,12 +96,7 @@ h2 {
     align-items: center;
     text-align: left;
     font-size: 1.2rem;
-}
-/* the class describes the hidden elements*/
-
-.hidden {
-    display: none;
-}
+} */
 
 /* used to make the image fade in */
 .fadein {
@@ -146,10 +137,10 @@ p {
 
 .output-paragraph {
     font-size: 2em;
+    text-align: left;
 }
 
 .button {
-    display: flex; 
     background-color: lightgrey;
     border: none;
     padding: 4px 44px;
@@ -169,39 +160,22 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
- /* 
-  @keyframes pulse {
-    20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
->>>>>>> d2f1bd3629070b56d5c72037ab0c13b8b703845d
-=======
->>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
 
 @keyframes pulse {
-20% {
-    transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-}
-
-40% {
-    transform: rotate3d(10, 10, -10, 50deg) scale(1);
-}
-
-60% {
-    transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+    20% {
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
-80% {
-    transform: rotate3d(10, 10, 10, 50deg) scale(1);
-}
+    40% {
+        transform: rotate3d(10, 10, -10, 50deg) scale(1);
+    }
 
+    60% {
+        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
+        }
+    80% {
+        transform: rotate3d(10, 10, 10, 50deg) scale(1);
+    }
 }
 
 .hidden {
@@ -211,9 +185,3 @@ footer {
 .visible {
     display: block;
 }
-<<<<<<< HEAD
-=======
-  }*/
->>>>>>> d2f1bd3629070b56d5c72037ab0c13b8b703845d
-=======
->>>>>>> 2c3ff82905844ef84686cfa5d5d31010bc83b393
