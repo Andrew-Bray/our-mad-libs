@@ -9,6 +9,8 @@ const number2 = document.getElementById("number2");
 const number2a = document.getElementById("number2a");
 const adjective3 = document.getElementById("adjective3");
 const submitButton = document.getElementById("submit");
+const resetButton = document.getElementById("reset");
+
 
 // THESE ARE OUTPUTS/SPANS
 const outputNoun1 = document.getElementById("output-noun1");
@@ -54,5 +56,30 @@ submitButton.addEventListener("click", () => {
   outputForm.classList.replace("hidden", "visible");
   outputForm.classList.add("poem-format");
 
-  machinePicture.classList.add("fadein");
+  machinePicture.classList.add("img-fadein");
 });
+
+resetButton.addEventListener("click", () => {
+  // replacing the text content of the output with the input value
+  outputNoun1.textContent = "";
+  outputNoun1a.textContent = "";
+  outputNoun1b.textContent = "";
+  outputNoun1c.textContent = "";
+  outputNoun2.textContent = "";
+  outputNoun3.textContent = "";
+  outputVerb1.textContent = "";
+  outputNumber1.textContent = "";
+  outputNumber2.textContent = "";
+  outputNumber2a.textContent = "";
+  outputAdjective1.textContent = "";
+  outputAdjective3.textContent = "";
+
+  // toggle class hidden and visible onsubmit
+  inputForm.classList.replace("hidden", 'visible');
+  outputForm.classList.replace("visible", "hidden");
+  outputForm.classList.remove("poem-format");
+
+  machinePicture.classList.remove("img-fadein");
+});
+
+

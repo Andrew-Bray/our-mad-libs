@@ -85,7 +85,9 @@ h2 {
 
 input {
     font-size: 1.5em;
+    height: 1.75em;
 }
+
 
 /*This class sets the unique CSS for the revealed poem*/
 
@@ -99,14 +101,14 @@ input {
 }
 
 /* used to make the image fade in */
-.fadein {
+.img-fadein {
     animation: fadein 15s ease;
-    display: flex;
-    width: 100%;
-    position: absolute;
     top: 50%;
-    z-index: -1;
+    width: 100%;
     opacity: 0.7;
+    z-index: -1;
+    display: flex;
+    position: absolute;
 }
 
 @keyframes fadein {
@@ -202,4 +204,13 @@ footer {
 .machine-picture {
     max-width: 100%;
     height: auto;
+}
+
+.capitilize{
+    text-transform: capitalize;
+}
+
+.prompt {
+    margin-bottom:0;
+    margin-top: 25px
 }
