@@ -76,43 +76,44 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
-/* 
-
-h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-} */
-
+.input-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 input {
     font-size: 1.5em;
+    height: 1.75em;
 }
+
 
 /*This class sets the unique CSS for the revealed poem*/
 
-.poem-format {
+.output-paragraph {
     display: flex;
     flex-direction: column;
     justify-content: left;
     align-items: center;
     text-align: left;
     font-size: 1.2rem;
+    min-height: 10000px;
+}
+
+.poem-fadein {
+    animation: fadein 1s ease;
 }
 
 /* used to make the image fade in */
-.fadein {
+.img-fadein {
+    animation-delay: 1.5s;
     animation: fadein 15s ease;
-    display: flex;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    z-index: -1;
-    opacity: 0.7;
+
 }
 
 @keyframes fadein {
     0% {
         opacity: 0;
-        transform: scale(.95);
+        transform: scale(.7);
 }
     100% {
         opacity: 1;
@@ -151,6 +152,7 @@ p {
 .output-paragraph {
     font-size: 2em;
     text-align: left;
+    height: 100%;
 }
 
 .button {
@@ -174,22 +176,6 @@ footer {
     box-shadow: var(--shadow);
 }
 
-/* @keyframes pulse {
-    20% {
-        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
-    }
-
-    40% {
-        transform: rotate3d(10, 10, -10, 50deg) scale(1);
-    }
-
-    60% {
-        transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-        }
-    80% {
-        transform: rotate3d(10, 10, 10, 50deg) scale(1);
-    }
-} */
 
 .hidden {
     display: none;
@@ -199,7 +185,21 @@ footer {
     display: block;
 }
 
-.machine-picture {
-    max-width: 100%;
+#machine-picture {
     height: auto;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.capitilize{
+    text-transform: capitalize;
+}
+
+.prompt {
+    margin-bottom:0;
+    margin-top: 25px;
 }

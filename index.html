@@ -18,62 +18,66 @@
         </div>
     </header>
     <main class="homework-machine">
-        <div class="visible" id="input-form">
-            <h2> Fill in the following words!</h2>
-            <h3 class="prompt" placeholder="Noun"> Noun: </h3>
+        <div id="input-form">
+            <h1> Fill in the following words!</h1>
+            <h2 class="prompt" type="text"> Noun: </h2>
             <input class="user-input" id="noun1" />
             
-            <h3 class="prompt"> Noun: </h3>
+            <h2 class="prompt"> Noun: </h2>
             <input class="user-input" id="noun2" />
 
-            <h3 class="prompt"> Noun: </h3>
+            <h2 class="prompt"> Noun: </h2>
             <input class="user-input" id="noun3" />
 
-            <h3 class="prompt"> Verb: </h3>
+            <h2 class="prompt"> Verb: </h2>
             <input class="user-input" id="verb1" />
 
-            <h3 class="prompt"> Number: </h3>
+            <h2 class="prompt"> Number: </h2>
             <input class="user-input" id="number1" />
 
-            <h3 class="prompt"> Adjective: </h3>
+            <h2 class="prompt"> Adjective: </h2>
             <input class="user-input" id="adjective1" />
             
-            <h3 class="prompt"> Number: </h3>
+            <h2 class="prompt"> Number: </h2>
             <input class="user-input" id="number2" />
 
-            <h3 class="prompt"> Adjective: </h3>
+            <h2 class="prompt"> Adjective: </h2>
             <input class="user-input" id="adjective3" />
             
             <br>
             <button id="submit" class="button">Submit!</button>
         </div>
         <div class="hidden output-paragraph" id="output-form">
-                <p>The <span id="output-noun1"></span> Machine,
+                <p>The <span class="capitilize" id="output-noun1"></span> Machine,
                 <br>
-                Oh, the <span id="output-noun1a"></span> Machine,
+                Oh, the <span class="capitilize" id="output-noun1a"></span> Machine,
                 <br>
                 Most perfect <span id="output-noun2"></span> that’s ever been seen.
                 <br>
                 Just put in your <span id="output-noun1b"></span> then drop in a <span id="output-noun3"></span>,
                 <br>
-                <span id="output-verb1"></span> on the switch, and in <span id="output-number1"></span> seconds’ time,
+                <span class="capitilize" id="output-verb1"></span> on the switch, and in <span id="output-number1"></span> seconds’ time,
                 <br>
                 Your <span id="output-noun1c"></span> comes out, <span id="output-adjective1"></span> and <span id="output-adjective2"></span> as can be.
                 <br>
                 Here it is—‘nine plus four?’ and the answer is ‘<span id="output-number2"></span>.’
                 <br>
-                <span id="output-number2a"></span>?
+                <span class="capitilize" id="output-number2a"></span>?
                 <br>
                 Oh me . . .
                 <br>
                 I guess it’s not as <span id="output-adjective3"></span>
                 <br>
                 As I thought it would be.
+                <br>
+                <button id="reset" class="button">Try again!</button>
             </p>
             <img id="machine-picture" src="./assets/homework-machine.jpeg" alt="A Shel Silverstein Machine">
-        </div>
+            <!--
             <img class="hidden" id="machine-picture" src="./assets/Homework_machine.png" alt="A Shel Silverstein Machine">
-
+-->
+        </div>
+        
 
         <br>
 
