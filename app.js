@@ -1,9 +1,5 @@
 import { validateInput } from './utils/clickHandlers.js';
-import {resetPoem } from './utils/reset.js';
-
-
-const submitButton = document.getElementById("submit");
-const resetButton = document.getElementById("reset");
+import { resetPoem } from './utils/reset.js';
 
 
 submitButton.addEventListener("click", validateInput);
