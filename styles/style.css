@@ -96,14 +96,16 @@ input {
     align-items: center;
     text-align: left;
     font-size: 1.2rem;
+    min-height: 10000px;
 }
 
 .poem-fadein {
-    transition: all 2s ease;
+    animation: fadein 1s ease;
 }
 
 /* used to make the image fade in */
 .img-fadein {
+    animation-delay: 1.5s;
     animation: fadein 15s ease;
 
 }
@@ -111,7 +113,7 @@ input {
 @keyframes fadein {
     0% {
         opacity: 0;
-        transform: scale(.95);
+        transform: scale(.7);
 }
     100% {
         opacity: 1;
