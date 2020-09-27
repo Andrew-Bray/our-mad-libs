@@ -1,24 +1,5 @@
 # our-mad-libs
 
-HTML file first
-
-Div {Visible}
-    - Multiple Inputs
-        - Noun
-        - Verb
-        - Favorite Food
-        - Animal
-    - Submit Button
-
-Div {Invisible}
-    - Paragraph
-        - Span 1
-        - Span 2
-        - Span 3
-
-Notes:
-    -Tag with ID
-
 ETHAN:
     i feel like making one input affect many words complicated this a little bit. also i think our labeling couldve been better as far as inputs v outputs. but i have no idea whats going on so maybe i just need everything explained like im 5. 
 
@@ -37,7 +18,8 @@ ANDREW:
 
     take care friends!
 
-Kevin:
+KEVIN:
 
-    - Fixed ESLint recommendations, Double quotes --> single quotes for strings, indentation, etc.
-    - Added more robust text transforms so user can input AnY VariATION Of TEXT LiKE tHis and it should format correctly
+    Fixed ESLint recommendations, Double quotes --> single quotes for strings, indentation, etc.
+    Added more robust text transforms so user can input AnY VariATION Of TEXT LiKE tHis and it should format correctly
+    Added logic to give the number of missing input forms blank upon submit. Borders then highlight in red to alert the users which were missed.
