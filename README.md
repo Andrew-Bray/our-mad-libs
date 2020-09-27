@@ -36,3 +36,8 @@ ANDREW:
     -The header needs a name, or it could be removed completely.
 
     take care friends!
+
+Kevin:
+
+    - Fixed ESLint recommendations, Double quotes --> single quotes for strings, indentation, etc.
+    - Added more robust text transforms so user can input AnY VariATION Of TEXT LiKE tHis and it should format correctly
