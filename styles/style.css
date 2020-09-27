@@ -195,7 +195,16 @@ footer {
     z-index: -1;
 }
 
-.capitilize{
+.lowercase{
+    text-transform: lowercase;
+}
+
+.capitalize{
+    text-transform: lowercase;
+    display: inline-block;
+}
+
+.capitalize:first-letter{
     text-transform: capitalize;
 }
 
