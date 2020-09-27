@@ -212,3 +212,38 @@ footer {
     margin-bottom:0;
     margin-top: 25px;
 }
+
+#noun1{
+    border:1px solid black;
+}
+#noun2{
+    border:1px solid black;
+}
+
+#noun3{
+    border:1px solid black;
+}
+
+#verb1{
+    border:1px solid black;
+}
+
+#number1{
+    border:1px solid black;
+}
+
+#adjective1{
+    border:1px solid black;
+}
+
+#adjective2{
+    border:1px solid black;
+}
+
+#number2{
+    border:1px solid black;
+}
+
+#adjective3{
+        border:1px solid black;
+}
